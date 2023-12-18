@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/theme_primary"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingStart="24dp"
+    android:paddingTop="16dp"
+    android:paddingEnd="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/menu_auto_updates_check"
+            android:textColor="?android:textColorPrimary"
+            android:textSize="16sp"
+            android:fontFamily="@*android:string/config_headlineFontFamily" />
+
+        <Spinner
+            android:id="@+id/preferences_auto_updates_check_interval"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:entries="@array/menu_auto_updates_check_interval_entries" />
+    </LinearLayout>
+
+    <Switch
+        android:id="@+id/preferences_metered_network_warning"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/menu_metered_network_warning"
+        android:textSize="16sp"
+        android:fontFamily="@*android:string/config_headlineFontFamily" />
+
+    <Switch
+        android:id="@+id/preferences_ab_perf_mode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/menu_ab_perf_mode"
+        android:textSize="16sp"
+        android:fontFamily="@*android:string/config_headlineFontFamily" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fontFamily="@*android:string/config_headlineFontFamily"
+        android:text="@string/customOTAUrl"
+        android:textColor="?android:textColorPrimary"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/preferences_customOTAUrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:inputType="textUri" />
+
+</LinearLayout>
